@@ -1,0 +1,8 @@
+default:
+  url: "postgres://matheus:bd123@localhost:5432/happy"
+  entities: ["src/**/**.entity{.ts,.js}"]
+  migrations: ["src/migrations/**{.ts,.js}"]
+  synchronize: false
+  logging: true
+  cli:
+    migrationsDir: "src/migrations"
